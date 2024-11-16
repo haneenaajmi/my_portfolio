@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
               ? null
               : DrawerMobile(onNavItemTap: (int navIndex) {
                   scaffoldKey.currentState?.closeEndDrawer();
-                  ScrollToSection(navIndex);
+                  scrollToSection(navIndex);
                 }),
           body: SingleChildScrollView(
             controller: scrollController,
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                 // Main
                 if (Constraints.maxWidth >= KMinDesktopWidth)
                   HeaderDesktop(onNavMenuTap: (int navIndex) {
-                    ScrollToSection(navIndex);
+                    scrollToSection(navIndex);
                   })
                 else
                   HeaderMobile(
@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void ScrollToSection(int navIndex) {
+  void scrollToSection(int navIndex) {
     if (navIndex == 4) {
       // open blog page
       js.context.callMethod('open', [SnsLinks.blog]);

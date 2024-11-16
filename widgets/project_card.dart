@@ -52,58 +52,58 @@ class ProjectCardWidget extends StatelessWidget {
           ),
           const Spacer(),
           // footer
-          Container(
-            color: CustomColor.bgLIght1,
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-            child: Row(
-              children: [
-                const Text(
-                  "Available on:",
-                  style: TextStyle(
-                    color: CustomColor.yellowSecondary,
-                    fontSize: 10,
-                  ),
-                ),
-                const Spacer(),
-                if (project.iosLink != null)
-                  InkWell(
-                    onTap: () {
-                      js.context.callMethod("open", [project.iosLink]);
-                    },
-                    child: Image.asset(
-                      "assets/Android logo.jpg",
-                      width: 19,
-                    ),
-                  ),
-                if (project.androidLink != null)
-                  Padding(
-                    padding: const EdgeInsets.only(left: 6),
-                    child: InkWell(
-                      onTap: () {
-                        js.context.callMethod("open", [project.androidLink]);
-                      },
-                      child: Image.asset(
-                        "assets/ios.jpg",
-                        width: 17,
-                      ),
-                    ),
-                  ),
-                if (project.webLink != null)
-                  Padding(
-                    padding: const EdgeInsets.only(left: 6),
-                    child: InkWell(
-                      onTap: () {
-                        js.context.callMethod("open", [project.webLink]);
-                      },
-                      child: Image.asset(
-                        "assets/web.jpg",
-                        width: 17,
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-          )
+          // Container(
+          //   color: CustomColor.bgLIght1,
+          //   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          //   child: Row(
+          //     children: [
+          //       const Text(
+          //         "Available on:",
+          //         style: TextStyle(
+          //           color: CustomColor.yellowSecondary,
+          //           fontSize: 10,
+          //         ),
+          //       ),
+          //       const Spacer(),
+          //       if (project.iosLink != null)
+          //         InkWell(
+          //           onTap: () {
+          //             js.context.callMethod("open", [project.iosLink]);
+          //           },
+          //           child: Image.asset(
+          //             "assets/Android logo.jpg",
+          //             width: 19,
+          //           ),
+          //         ),
+          //       if (project.androidLink != null)
+          //         Padding(
+          //           padding: const EdgeInsets.only(left: 6),
+          //           child: InkWell(
+          //             onTap: () {
+          //               js.context.callMethod("open", [project.androidLink]);
+          //             },
+          //             child: Image.asset(
+          //               "assets/ios.jpg",
+          //               width: 17,
+          //             ),
+          //           ),
+          //         ),
+          //       if (project.webLink != null)
+          //         Padding(
+          //           padding: const EdgeInsets.only(left: 6),
+          //           child: InkWell(
+          //             onTap: () {
+          //               js.context.callMethod("open", [project.webLink]);
+          //             },
+          //             child: Image.asset(
+          //               "assets/web.jpg",
+          //               width: 17,
+          //             ),
+          //           ),
+          //         ),
+          //     ],
+          //   ),
+          // ),
         ],
       ),
     );

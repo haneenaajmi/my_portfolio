@@ -6,17 +6,17 @@ class Footer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
-                padding: EdgeInsets.symmetric(vertical: 20),
-                width: double.maxFinite,
-                alignment: Alignment.center,
-                child:const  Text(
-                  "Made by Haneena Ajmi with Flutter",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    color: CustomColor.whitesecondary,
-                  ),
-                ),
-              );
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 20),
+      width: double.maxFinite,
+      alignment: Alignment.center,
+      child: const Text(
+        "Made by Haneena Ajmi with Flutter 3.24.4",
+        style: TextStyle(
+          fontWeight: FontWeight.w400,
+          color: CustomColor.whitesecondary,
+        ),
+      ),
+    );
   }
 }

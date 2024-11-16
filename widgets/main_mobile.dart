@@ -24,7 +24,7 @@ class MainMobile extends StatelessWidget {
             shaderCallback: (bounds) {
               return LinearGradient(colors: [
                 CustomColor.ScaffoldBg,
-                CustomColor.ScaffoldBg.withOpacity(0.6),
+                CustomColor.ScaffoldBg.withOpacity(0.3),
               ]).createShader(bounds);
             },
             blendMode: BlendMode.srcATop,
@@ -39,7 +39,7 @@ class MainMobile extends StatelessWidget {
             "Hello there,\nI'm Haneena Ajmi\nA Mobile Application Developer",
             // \n specialised in flutter Development!",
             style: TextStyle(
-              fontSize: 24,
+              fontSize: 14,
               height: 1.5,
               fontWeight: FontWeight.bold,
               color: CustomColor.whiteprimary,

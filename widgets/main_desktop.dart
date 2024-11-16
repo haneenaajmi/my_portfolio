@@ -21,10 +21,9 @@ class MainDesktop extends StatelessWidget {
             children: [
               // intro
               const Text(
-                "Hello there,\nI'm Haneena Ajmi\nA Mobile Application Developer",
-                // \n specialised in flutter Development!",
+                "Hello there,\nI'm Haneena Ajmi\nA Mobile Application Developer\n specialised in flutter Development!",
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 10,
                   height: 1.5,
                   fontWeight: FontWeight.bold,
                   color: CustomColor.whiteprimary,

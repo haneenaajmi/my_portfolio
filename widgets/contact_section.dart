@@ -89,7 +89,7 @@ class ContactSection extends StatelessWidget {
                   js.context.callMethod('Open', [SnsLinks.linkedin]);
                 },
                 child: Image.asset(
-                  "assets/linkedin-logo.png",
+                  "assets/linkedin _icon.jpg",
                   width: 28,
                 ),
               ),
