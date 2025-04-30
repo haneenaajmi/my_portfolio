@@ -23,8 +23,8 @@ class MainMobile extends StatelessWidget {
           ShaderMask(
             shaderCallback: (bounds) {
               return LinearGradient(colors: [
-                CustomColor.ScaffoldBg,
-                CustomColor.ScaffoldBg.withOpacity(0.3),
+                CustomColor.scaffoldBg,
+                CustomColor.scaffoldBg.withOpacity(0.3),
               ]).createShader(bounds);
             },
             blendMode: BlendMode.srcATop,

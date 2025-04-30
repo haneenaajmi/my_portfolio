@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
 import 'package:my_portfolio/constants/sns_links.dart';
@@ -29,7 +28,7 @@ class ContactSection extends StatelessWidget {
           ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 700, maxHeight: 100),
             child: LayoutBuilder(builder: (context, Constraints) {
-              if (Constraints.maxWidth >= KMinDesktopWidth) {
+              if (Constraints.maxWidth >= kminDesktopWidth) {
                 return buildNameEmailFieldDesktop();
               }
               // else
@@ -42,7 +41,7 @@ class ContactSection extends StatelessWidget {
             constraints: const BoxConstraints(
               maxWidth: 700,
             ),
-            child: CustomTextfield(
+            child: const CustomTextfield(
               hintText: "Your message",
               maxLines: 10,
             ),
@@ -128,7 +127,7 @@ class ContactSection extends StatelessWidget {
   }
 
   Row buildNameEmailFieldDesktop() {
-    return Row(
+    return const Row(
       children: [
         Flexible(
           // name
@@ -136,7 +135,7 @@ class ContactSection extends StatelessWidget {
             hintText: "Your name",
           ),
         ),
-        const SizedBox(width: 15),
+        SizedBox(width: 15),
         //  email
         Flexible(
           child: CustomTextfield(
@@ -148,7 +147,7 @@ class ContactSection extends StatelessWidget {
   }
 
   Column buildNameEmailFieldMobile() {
-    return Column(
+    return const Column(
       children: [
         Flexible(
           // name
@@ -156,7 +155,7 @@ class ContactSection extends StatelessWidget {
             hintText: "Your name",
           ),
         ),
-        const SizedBox(height: 15),
+        SizedBox(height: 15),
         //  email
         Flexible(
           child: CustomTextfield(

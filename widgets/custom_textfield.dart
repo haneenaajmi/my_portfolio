@@ -18,7 +18,7 @@ class CustomTextfield extends StatelessWidget {
       controller: controller,
       maxLines: maxLines,
       style: const TextStyle(
-        color: CustomColor.ScaffoldBg,
+        color: CustomColor.scaffoldBg,
       ),
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.all(16),

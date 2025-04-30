@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
 import 'package:my_portfolio/constants/sns_links.dart';
@@ -36,8 +35,8 @@ class _HomePageState extends State<HomePage> {
       builder: (context, Constraints) {
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: CustomColor.ScaffoldBg,
-          endDrawer: Constraints.maxWidth >= KMinDesktopWidth
+          backgroundColor: CustomColor.scaffoldBg,
+          endDrawer: Constraints.maxWidth >= kminDesktopWidth
               ? null
               : DrawerMobile(onNavItemTap: (int navIndex) {
                   scaffoldKey.currentState?.closeEndDrawer();
@@ -51,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(key: navbarKeys.first),
 
                 // Main
-                if (Constraints.maxWidth >= KMinDesktopWidth)
+                if (Constraints.maxWidth >= kminDesktopWidth)
                   HeaderDesktop(onNavMenuTap: (int navIndex) {
                     scrollToSection(navIndex);
                   })
@@ -62,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                       scaffoldKey.currentState?.openEndDrawer();
                     },
                   ),
-                if (Constraints.maxWidth >= KMinDesktopWidth)
+                if (Constraints.maxWidth >= kminDesktopWidth)
                   const MainDesktop()
                 else
                   const MainMobile(),
@@ -86,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       const SizedBox(height: 50),
                       // platforms and skills
-                      if (Constraints.maxWidth >= KMedDesktopWidth)
+                      if (Constraints.maxWidth >= kmedDesktopWidth)
                         const SkillsDesktop()
                       else
                         const SkillsMobile(),

@@ -7,14 +7,14 @@ const List<Map> platformItems = [
     "img": "assets/web.jpg",
     "title": "Web Dev",
   },
-  {
-    "img": "assets/ios.jpg",
-    "title": "IOS Dev",
-  },
-  {
-    "img": "assets/desktop.jpg",
-    "title": "Desktop Dev",
-  },
+  // {
+  //   "img": "assets/ios.jpg",
+  //   "title": "IOS Dev",
+  // },
+  // {
+  //   "img": "assets/desktop.jpg",
+  //   "title": "Desktop Dev",
+  // },
 ];
 
 const List<Map> skillItems = [

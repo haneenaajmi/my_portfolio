@@ -14,7 +14,7 @@ class SkillsMobile extends StatelessWidget {
           // platform
           for (int i = 0; i < platformItems.length; i++)
             Container(
-              margin: EdgeInsets.only(bottom: 5.0),
+              margin: const EdgeInsets.only(bottom: 5.0),
               width: double.maxFinite,
               decoration: BoxDecoration(
                 color: CustomColor.bgLight2,
@@ -30,7 +30,7 @@ class SkillsMobile extends StatelessWidget {
                 title: Text(platformItems[i]["title"]),
               ),
             ),
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
           // skills
           Wrap(
             spacing: 10.0,

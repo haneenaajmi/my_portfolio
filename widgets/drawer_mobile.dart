@@ -9,7 +9,7 @@ class DrawerMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: CustomColor.ScaffoldBg,
+      backgroundColor: CustomColor.scaffoldBg,
       child: ListView(
         children: [
           Align(
@@ -20,7 +20,7 @@ class DrawerMobile extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
-                icon: Icon(Icons.close),
+                icon: const Icon(Icons.close),
               ),
             ),
           ),
